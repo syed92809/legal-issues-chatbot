@@ -1,3 +1,12 @@
+getIn = "high"
+
+# Print the first character of the entered word
+print("You entered:", getIn)
+
+# Convert the first character to uppercase and concatenate with the rest of the string
+filtered = getIn[0].upper() + getIn[1:]
+print(filtered)
+
 
 # import nltk
 # import numpy as np
