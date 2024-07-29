@@ -17,7 +17,7 @@ load_dotenv()
 api_key = os.getenv('API_KEY')
 
 # Initialize Firebase Admin SDK
-cred_path = "C:/Users/farru/PythonProjects/legal_chatbot/self-learning/lawyerfinder-86944-firebase-adminsdk-5llwt-50fdbafd19.json"
+cred_path = os.getenv('FIREBASE_CREDENTIALS_PATH')
 
 try:
     cred = credentials.Certificate(cred_path)
@@ -169,7 +169,10 @@ async def chat(request: ChatRequest):
     )
     
     response = model.generate_content(prompt)
-    logging.info(f"GPT response: {response.text}")
+    logging.info(f"Bot response: {response.text}")
+
+    # Log user question and GPT response
+    user_bot_logs = f"User question: {user_question}\Bot response: {response.text}\n"
 
     if 'lawyer' in user_question.lower() or 'lawyers' in user_question.lower():
         specialization, court, min_rating, max_price = parse_user_input_cosine(user_question_capitalized, specialization_keywords, court_keywords)
@@ -190,8 +193,25 @@ async def chat(request: ChatRequest):
         lawyer_profiles = []
         modified_response = response.text + "\n\nNote: This information is for educational purposes only and should not be considered legal advice."
     
+    # Calculate vector size, cosine similarity, and precision
+    texts = [user_question, response.text]
+    vectorizer = TfidfVectorizer().fit_transform(texts)
+    vectors = vectorizer.toarray()
+    vector_size = vectors.shape[1]
+    cosine_sim = cosine_similarity(vectors[0].reshape(1, -1), vectors[1].reshape(1, -1))[0][0]
+    
+    # Approximate precision as cosine similarity for simplicity
+    precision = cosine_sim
+
+    # Log vector size, cosine similarity, and precision
+    user_bot_logs += f"Vector size: {vector_size}\nCosine similarity: {cosine_sim}\nPrecision: {precision}\n\n"
+
+    # Save to text file
+    with open('user_bot_chat_logs.txt', 'a') as file:
+        file.write(user_bot_logs)
+
     return {"response": modified_response, "lawyers": lawyer_profiles}
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="192.168.0.120", port=8000)

@@ -1,0 +1,59 @@
+User question: hi
+Bot response: Hello! I understand you may have legal questions.  I'm here to help guide you and provide general information.  Please tell me what legal issue you're facing so I can assist you. 
+
+Vector size: 26
+Cosine similarity: 0.0
+Precision: 0.0
+
+User question: hello
+Bot response: Hello! How can I help you today? I'm here to answer any legal questions you may have.  
+
+Vector size: 14
+Cosine similarity: 0.1751280861929285
+Precision: 0.1751280861929285
+
+User question: can you show me high court lawyers only
+Bot response: I understand you're looking for lawyers who specialize in high court cases. While I can't directly show you profiles, I can definitely help you find the right legal professionals for your needs. 
+
+Let's talk about your specific situation. What kind of case are you facing? What are the legal issues involved?  The more details you provide, the better I can help you connect with experienced attorneys who can guide you through the process. 
+
+Vector size: 52
+Cosine similarity: 0.3039173308139498
+Precision: 0.3039173308139498
+
+User question: that great but I want to see high court lawyer who has rating of above 3
+Bot response: I understand you're looking for a highly rated Supreme Court lawyer. While I can't give you specific lawyer profiles, I can certainly help you find the best legal representation for your needs. 
+
+Let's discuss your case in more detail. Tell me about the specific legal issue you're facing, and I'll be able to connect you with the most qualified lawyers who specialize in Supreme Court matters and have the experience and expertise you need. 
+
+Vector size: 62
+Cosine similarity: 0.07537055470599993
+Precision: 0.07537055470599993
+
+User question: now show me patent lawyers of supreme court
+Bot response: I understand you're looking for information about patent lawyers who have experience with the Supreme Court. While I can't provide specific attorney profiles, I can assure you that our database contains a wealth of qualified legal professionals. 
+
+To find the best patent lawyer for your specific needs, I recommend scheduling a consultation with one of our lawyers. They can provide tailored advice and guidance based on your unique situation. 
+
+Vector size: 54
+Cosine similarity: 0.18668383914547385
+Precision: 0.18668383914547385
+
+User question: show me supreme court lawyers
+Bot response: I understand you're looking for lawyers who specialize in Supreme Court cases.  That's a very specific area of law, and I can help you find the right attorneys for your needs. 
+
+To ensure you connect with the best fit for your case, could you tell me a little more about what you're facing?  For example, what kind of case are you involved in? What specific legal issue are you dealing with? 
+
+Once I have a better understanding of your situation, I can connect you with the perfect lawyer from my database who has extensive experience handling Supreme Court cases. 
+
+Vector size: 64
+Cosine similarity: 0.12078476218121659
+Precision: 0.12078476218121659
+
+User question: great, thanks
+Bot response: You're welcome!  Is there anything specific I can help you with today? I'm here to answer any legal questions you may have. 
+
+Vector size: 21
+Cosine similarity: 0.0
+Precision: 0.0
+
