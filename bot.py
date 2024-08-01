@@ -165,6 +165,8 @@ async def chat(request: ChatRequest):
         f"Don't refer external websites or resources to the user, only convince the user to consult lawyers through our app. "
         f"Don't recommend user to use our search or filter feature, they can only find lawyer by talking to you."
         f"If user ask any other question other than legal issue or try to talk on any other topic than simply deny asking that question by saying I am not programmed to answer on this topic."
+        f"Don't write lenghty text or ask too many questions when user ask for any lawyer, just give user advice if they specifically ask for any, otherwise just write one or two lines of text when user ask for any lawyers."
+        f"Keep the words under 50 of your each responses, don't exceed than 50."
         f"Question: {user_question_capitalized}"
     )
     
@@ -214,4 +216,4 @@ async def chat(request: ChatRequest):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="192.168.0.120", port=8000)
+    uvicorn.run(app, host="192.168.120.164", port=8000)

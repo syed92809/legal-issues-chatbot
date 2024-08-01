@@ -57,3 +57,33 @@ Vector size: 21
 Cosine similarity: 0.0
 Precision: 0.0
 
+User question: hi\Bot response: Hello! How can I assist you today? I'm here to offer legal guidance and answer any questions you might have. Please feel free to ask anything related to legal matters in the United States. 
+
+Vector size: 29
+Cosine similarity: 0.0
+Precision: 0.0
+
+User question: hi\Bot response: Hello!  How can I help you today?  I understand that legal matters can be complex and confusing.  I'm here to help you navigate them.  Please tell me what legal issue you're facing, and I'll do my best to guide you. 
+
+Vector size: 31
+Cosine similarity: 0.0
+Precision: 0.0
+
+User question: show me high court lawyers\Bot response: I understand you're looking for legal expertise within the High Court system. That's a specialized area, and I can certainly help you connect with the right professionals. 
+
+To ensure you receive the best possible legal guidance, I need to understand your specific needs. Could you tell me more about the type of case you're facing and the area of law involved?  This will help me narrow down the search and find the most appropriate High Court lawyers for your situation. 
+
+Vector size: 55
+Cosine similarity: 0.15930532321360552
+Precision: 0.15930532321360552
+
+User question: show me high court lawyers\Bot response: I understand you're looking for legal representation in a matter that may involve the High Court.  It's important to choose a lawyer with specialized expertise in this area. I can help you find the right attorney for your needs. 
+
+To connect you with the best High Court lawyers, I need a bit more information about your specific legal issue. Could you tell me about the nature of your case? For example, is it a civil matter, a criminal matter, or something else? 
+
+By understanding the specifics of your situation, I can find you the most qualified legal professionals with the right experience to represent you effectively in the High Court. 
+
+Vector size: 66
+Cosine similarity: 0.14723479164994366
+Precision: 0.14723479164994366
+
